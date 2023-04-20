@@ -1,0 +1,334 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+
+    --base:#FFF2CC;
+    --gris-marron:#8D7B68;
+    --marron: #886138;
+    --beige:#C8B6A6;
+    --granate:#6F1717;
+    --gris:#D9D9D9;
+    --negro:#000000;
+    --blanco:#ffffff;
+    --fuente-principal:'Playfair Display', serif;
+    --fuente-secundaria:'Poppins', sans-serif;
+    --fuente-terciaria: 'Lilita One', cursive;
+    
+}
+
+html {
+    font-size: 62.5%; /*^Esto es para que 1rem = a 10px*/
+}
+
+
+
+/*^GLOBALES*/
+body {
+    background-color: var(--base);
+    font-size: 1.6rem;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+h1 {
+    font-size: 4.6rem;
+}
+h2 {
+
+}
+/*&PAGE-INDEX-INICIO*/
+
+/*^NAVEGACION*/
+.contenedor-logo-nav {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding:0 2rem;
+    width:75%;
+    margin:auto;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.header-logo {
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem;
+    
+}
+ul {
+    gap:4rem;
+    margin:0 2rem 0 0;
+    padding:0;
+    font-family: var(--fuente-principal);
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color:var(--negro)
+}
+.nav-enlace {
+    color:var(--negro)
+}
+
+.nav-enlace:hover {
+    color:var(--granate);
+}
+
+/*^SLOGAN*/
+
+.contenedor-slogan {
+    background-image: url(../assets/img/granos-cafe-2.jpg);
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-slogan .slogan {
+    color:var(--blanco);
+    font-family: var(--fuente-principal);
+    font-size: 50px;
+    font-weight:900;
+    letter-spacing: 2px;
+    
+}
+.contenedor-blanco-negro {
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedor-blanco-negro .negro {
+    background-color:var(--negro);
+    color:var(--blanco);
+    font-family: var(--fuente-principal);
+    font-size:2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding: 3rem 0 3rem 2rem;
+    
+}
+.contenedor-blanco-negro .blanco {
+    background-color:var(--blanco);
+    color:var(--negro);
+    font-family: var(--fuente-principal);
+    font-size:2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding: 3rem 0 3rem 2rem;
+}
+/*^MAIN*/
+main section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--fuente-secundaria);
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 2px;
+    margin:5rem;
+}
+
+.contenedor-variedades {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contenedor-productos {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:3rem;
+    margin-top: 3rem;
+
+}
+.img-cafe {
+    border-radius: 10%;
+    
+}
+.cafe {
+    text-align: center;
+    font-family: var(--fuente-secundaria);
+    padding: 15rem 0;
+    color:var(--marron);
+}
+.producto-informacion .nombre-producto {
+    font-weight: bolder ;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 2px;
+    color:var(--marron);
+
+}
+.cafe .precio-producto {
+    font-weight: bolder ;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 2px;
+    color:var(--marron);
+}
+.boton-agregar-carrito{
+    
+}
+.contenedor-ver-productos {
+    display:flex;
+    justify-content: center;
+}
+.boton-ver-productos {
+    border: 1px solid #886138;
+    font-family: var(--fuente-secundaria);
+    font-weight: bold;
+    padding:1rem;
+    color:#886138;
+    margin-bottom: 10rem;
+    margin-top:-8rem;
+}
+
+/*^FOOTER*/
+
+.contactos-y-redes {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gris);
+}
+.contacto h2 {
+    font-family: var(--fuente-terciaria);
+    font-weight: bold;
+    color:var(--granate);
+    font-size: 3.2rem;
+}
+.contacto p {
+    font-family: var(--fuente-principal);
+    font-weight:700
+}
+.redes-sociales {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.siguenos-redes span {
+    color:var(--granate)
+}
+.siguenos-redes {
+    font-family: var(--fuente-terciaria);
+    font-weight: bold;
+    font-size: 3.2rem;
+    text-align:right;
+
+}
+
+
+/*&PAGE-INDEX-FIN*/
+
+/*&PAGE-NOSOTROS-INICIO*/
+.nosotros {
+    width:50%;
+    margin:auto;
+}
+.nuestros-origenes {
+    display:flex;
+    gap:2rem;
+    align-items:top;
+    padding:7rem 0;
+}
+.nuestra-filosofia {
+    display:flex;
+    gap:2rem;
+    align-items:top;
+    padding:7rem 0;
+}
+/*&PAGE-NOSOTROS-FIN*/
+
+/*&PAGE-PRODUCTOS-INICIO*/
+.nuestros-productos {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--fuente-secundaria);
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 2px;
+    margin-bottom:-5rem;
+}
+.productos .contenedor-variedades {
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+    width:75%
+}
+/*&PAGE-PRODUCTOS-FIN*/
+
+/*&PAGE-CONTACTO-INICIO*/
+.contactanos {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--fuente-secundaria);
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 2px;
+    margin: 5rem;
+}
+.contenedor-info-ubicacion {
+    display:flex;
+    width:70%;
+    margin:auto;
+    justify-content: space-evenly;
+    padding:5rem 0;
+
+}
+.info {
+    font-family: var(--fuente-principal);
+    font-weight: 600;
+    line-height: 3rem ;
+}
+.info p {
+    padding-bottom: 2rem;
+}
+.info span {
+    color:var(--granate);
+    
+}
+/*&PAGE-CONTACTO-FIN*/
+
+/*&PAGE-RECETAS-INICIO*/
+.recetas {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--fuente-secundaria);
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 2px;
+    padding: 5rem 0;
+}
+
+.receta-flat-white {
+    display:flex;
+    width:75%;
+    margin:auto;
+    gap:3rem;
+    padding: 7rem 0;
+}
+/*&PAGE-RECETAS-FIN*/
+
