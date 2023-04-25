@@ -35,7 +35,7 @@ html {
 body {
     background-color: var(--base);
     font-size: 1.6rem;
-    font-family: var(--fuente-principal);
+    
 }
 
 a {
@@ -49,13 +49,8 @@ h1 {
     font-size: 4.6rem;
 }
 h2 {
-    font-size: 3.8rem;
-}
 
-img {
-    width:100%
 }
-
 /*&PAGE-INDEX-INICIO*/
 
 /*^NAVEGACION*/
@@ -66,7 +61,6 @@ img {
     padding:0 2rem;
     width:75%;
     margin:auto;
-    overflow: hidden; /*^Con esta propiedad la nav bar no rompe el código, luego la reemplazo con el menú hamburgesa*/
 }
 
 .navbar {
@@ -250,52 +244,21 @@ main section h1 {
 
 /*&PAGE-NOSOTROS-INICIO*/
 .nosotros {
-    width:75%;
+    width:50%;
     margin:auto;
 }
 .nuestros-origenes {
-    margin-top: 5rem;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    grid-template-rows: 1fr 1;
-    grid-template-areas: "img1 h2a"
-                         "img1 pa";
+    display:flex;
+    gap:2rem;
+    align-items:top;
+    padding:7rem 0;
 }
-.nosotros-img1 {
-    width:100%;
-    height:100%;
-    overflow: hidden;
-    object-fit: contain;
-    grid-area:img1
-}
-.nosotros-p-o {
-    text-align: justify;
-    grid-area: pa;
-}
-
 .nuestra-filosofia {
-    margin:5rem 0;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    grid-template-rows: 1fr 1;
-    grid-template-areas: "h2b img2 "
-                         "pb img2";
+    display:flex;
+    gap:2rem;
+    align-items:top;
+    padding:7rem 0;
 }
-.nosotros-img2 {
-    width:100%;
-    height:100%;
-    overflow: hidden;
-    object-fit: contain;
-    grid-area:img2
-}
-.nosotros-p-o {
-    text-align: justify;
-    grid-area: pb;
-}
-
-
 /*&PAGE-NOSOTROS-FIN*/
 
 /*&PAGE-PRODUCTOS-INICIO*/
@@ -367,50 +330,3 @@ main section h1 {
     padding: 7rem 0;
 }
 /*&PAGE-RECETAS-FIN*/
-
-/*!MediaQueries*/
-
-@media (max-width: 768px) {
-    .nosotros {
-        width:95%;
-        margin:auto;
-    }
-    .nuestros-origenes {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:4rem 0 0 0;
-    }
-    .nuestra-filosofia {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:7rem 0;
-    }
-}
-
-@media (max-width: 375px) {
-    .nosotros {
-        width:90%;
-        margin:auto;
-    }
-    .nuestros-origenes {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:4rem 0 0 0;
-    }
-    .nuestra-filosofia {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:7rem 0;
-    }
-    .nosotros-p {
-        line-height: 2.5rem;
-    }
-}
