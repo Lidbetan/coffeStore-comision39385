@@ -269,13 +269,15 @@ main section h1 {
     gap:1rem;
 }
 .siguenos-redes span {
-    color:var(--granate)
+    color:var(--granate);
 }
 .siguenos-redes {
     font-family: var(--fuente-terciaria);
     font-weight: bold;
     font-size: 3.2rem;
-    text-align:right;
+    /*text-align:right;*/
+    width:auto;
+    
 
 }
 
