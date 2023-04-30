@@ -240,8 +240,7 @@ main section h1 {
     font-weight: bold;
     padding:1rem;
     color:#886138;
-    margin-bottom: 10rem;
-    margin-top:-8rem;
+
 }
 
 /*^FOOTER*/
@@ -275,7 +274,7 @@ main section h1 {
     font-family: var(--fuente-terciaria);
     font-weight: bold;
     font-size: 3.2rem;
-    /*text-align:right;*/
+   /*text-align:right;*/
     width:auto;
     
 
@@ -329,6 +328,24 @@ main section h1 {
     text-align: justify;
     grid-area: pb;
 }
+.contactos-y-redes {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--gris);
+}
+.siguenos-redes-nosotros {
+    font-family: var(--fuente-terciaria);
+    font-weight: bold;
+    font-size: 3.2rem;
+    text-align:right;
+    width:auto;
+    margin-right:-30rem;
+    
+}
+.siguenos-redes-nosotros span {
+    color:var(--granate);
+}
 
 
 /*&PAGE-NOSOTROS-FIN*/
@@ -364,6 +381,7 @@ main section h1 {
 .contenedor-info-ubicacion {
     display:flex;
     width:70%;
+    gap:2rem;
     margin:auto;
     justify-content: space-evenly;
     padding:5rem 0;
@@ -425,7 +443,7 @@ main section h1 {
         padding:7rem 0;
     }
 }
-
+/**MQ-NOSOTROS*/
 @media (max-width: 375px) {
     .nosotros {
         width:90%;
@@ -447,5 +465,74 @@ main section h1 {
     }
     .nosotros-p {
         line-height: 2.5rem;
+    }
+    .contactos-y-redes {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:1rem;
+    }
+    .contacto {
+        text-align: center;
+    }
+    .siguenos-redes-nosotros {
+        text-align: center;
+        margin:auto;
+    }
+}
+@media (max-width: 425px) {
+    .nosotros {
+        width:90%;
+        margin:auto;
+    }
+    .nuestros-origenes {
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        align-items:center;
+        padding:4rem 0 0 0;
+    }
+    .nuestra-filosofia {
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        align-items:center;
+        padding:7rem 0;
+    }
+    .nosotros-p {
+        line-height: 2.5rem;
+    }
+    .contactos-y-redes {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:1rem;
+    }
+    .contacto {
+        text-align: center;
+    }
+    .siguenos-redes-nosotros {
+        text-align: center;
+        margin:auto;
+    }
+}
+@media (max-width: 768px) {
+    .contactos-y-redes {
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .siguenos-redes-nosotros {
+        margin:auto;
+    }
+}
+
+/**MQ-INDEX*/
+
+@media (max-width: 375px) {
+    .contenedor-slogan .slogan {
+        font-size: 4rem;
+    }
+    main section h1 {
+        font-size: 4rem;
     }
 }
