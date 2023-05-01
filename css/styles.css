@@ -216,6 +216,10 @@ main section h1 {
 
 /*^FOOTER*/
 
+footer {
+    background-color: var(--gris);
+    width:100%;
+}
 .contactos-y-redes {
     display:flex;
     justify-content: space-around;
@@ -394,6 +398,11 @@ main section h1 {
 
 /*!MediaQueries*/
 /**MQ-NOSOTROS*/
+@media (max-width: 320px) {
+    .h2-origenes {
+        text-align: center;
+    }
+}
 @media (max-width: 375px) {
     .contenedor-logo-nav {
         display:flex;
@@ -532,6 +541,16 @@ main section h1 {
         margin:auto;
     }
 }
+@media (max-width: 1024px) {
+    .siguenos-redes-nosotros {
+        margin:auto;
+    }
+
+    .contenedor-logo-nav {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+}
 
 
 /**MQ-INDEX*/
@@ -543,4 +562,5 @@ main section h1 {
     main section h1 {
         font-size: 4rem;
     }
+
 }
