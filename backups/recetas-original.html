@@ -5,117 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locos por el Café index</title>
-    <link href="./css/styles.css" rel="stylesheet">
+    <title>Locos por el Café recetas</title>
+    <link href="../css/styles.css" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <div>
-            <div>
-                <a href="./index.html">
-                    <img src="./assets/img/locos-x-el-cafe-logo.png" alt="logo-locos-x-el-cafe">
+        <div class="contenedor-logo-nav">
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img class="header-logo" src="../assets/img/locos-x-el-cafe-logo.png" alt="logo-locos-x-el-cafe">
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a class="enlaces" href="./index.html">Inicio</a></li>
-                    <li><a class="enlaces" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="enlaces" href="./pages/productos.html">Productos</a></li>
-                    <li><a class="enlaces" href="./pages/contacto.html">Contacto</a></li>
-                    <li><a class="enlaces" href="./pages/recetas.html">Recetas</a></li>
-                </ul>
+            <ul class="navbar">
+                <li><a class="nav-enlace nav-enlace-activo" href="../index.html">Inicio</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="./productos.html">Productos</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="./contacto.html">Contacto</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="recetas.html">Recetas</a></li>
+            </ul>
             </nav>
         </div>
 
     </header>
 
-    <div class="contenedor-slogan" >
-        <h2>La vida sabe mejor con una<br>taza de café</h2>
-    </div>
-    
-    <div class="contenedor-blanco-negro">
-        <div class="negro" >
-            <h3 >La mejor calidad</h3>
-        </div>
-        <div class="blanco">
-            <h3>El mejor precio</h3>
-        </div>
-    </div>
-
-    <!-- ^variedades-inicio -->
-
     <main>
         <section>
-            <h1 ">Nuestras variedades</h1>
-            <div class="contenedor-variedades"> <!--^ variedades-inicio-->
-                    <div class="variedades">
-                        <a href="./pages/productos.html">
-                            <img src="./assets/img/cafe-italiano.jpg" alt="cafe-italiano">
-                        </a>
-                        <div>
-                            <p class="cafe-nombre">Italiano</p>
-                            <p class="cafe-info">Café tipo italiano, robusto
-                                intenso, 100% granos arábigos...</p>
-                            <p class="cafe-precio">$2400</p>
-                            <form action="" method="post">
-                                <input class="boton-agregar-carrito" type="submit" value="Agregar al carrito">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="variedades">
-                        <a href="./pages/productos.html">
-                            <img src="./assets/img/cafe-brasil .jpg" alt="cafe-brasil">
-                        </a>
-                        <div>
-    
-                            <p class="cafe-nombre">Brasil</p>
-                            <p class="cafe-info">Café tipo italiano, robusto
-                                intenso, 100% granos arábigos...</p>
-                            <p class="cafe-precio">$2400</p>
-                            <form action="" method="post">
-                                <input class="boton-agregar-carrito" type="submit" value="Agregar al carrito">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="variedades">
-                        <a href="./pages/productos.html"> <!--^CORREGIR TAMAÑO IMAGEN-->
-                            <img src="./assets/img/cafe-colombia.png" alt="cafe-colombia">
-                        </a>
-                        <div>
-                            <p class="cafe-nombre">Colombia</p>
-                            <p class="cafe-info">Café tipo italiano, robusto
-                                intenso, 100% granos arábigos...</p>
-                            <p class="cafe-precio">$2400</p>
-                            <form action="" method="post">
-                                <input class="boton-agregar-carrito" type="submit" value="Agregar al carrito">
-                            </form>
-    
-                        </div>
-                    </div>
-
+            <div>
+                <h1 class="recetas">Recetas para baristear</h1>
             </div>
-
-            <div class="contenedor-ver-productos">
-                <a class="boton-ver-productos" href="pages/productos.html">Ver todos los productos</a>
-            </div> <!--^variedades-fin-->
+            <div class="receta-flat-white">
+                <div><img src="../assets/img/receta-flat-white.png" alt="flat-white"></div>
+                <div>
+                    <p>Exercitation amet labore do fugiat culpa veniam cillum anim dolor mollit. Ut dolore occaecat elit
+                        velit amet consequat velit anim proident dolore duis irure consectetur quis. Qui irure duis
+                        Lorem
+                        sit culpa minim deserunt elit velit anim in ex fugiat. Irure deserunt ad ex laboris qui nisi in
+                        officia qui adipisicing ullamco aliquip labore. Fugiat
+                        dolor fugiat esse reprehenderit esse anim laboris. Nisi nisi esse non fugiat. Est dolore
+                        adipisicing
+                        id aliquip anim aliqua in aliquip sint. Pariatur veniam consequat qui irure aute nulla. Enim
+                        sint
+                        voluptate laborum excepteur nostrud Lorem enim nulla non velit commodo veniam et.</p>
+                </div>
+            </div>
         </section>
+
+
     </main>
-    <!-- ^productos-fin -->
 
     <footer>
-        <section >
-            <div>
+        <section class="contactos-y-redes">
+            <div class="contacto">
                 <h2>Contacto</h2>
-                <p >Corrientes 1367 - Rosario, Santa Fé</p>
-                <p>+54 341 423432</p>
-                <p> locosxelcafe@cafe.com</p>
+                <p class="direccion">Corrientes 1367 - Rosario, Santa Fé</p>
+                <p class="telefono">+54 341 423432</p>
+                <p class="e-mail"> locosxelcafe@cafe.com</p>
             </div>
-            <div>
-                <h2><span>Síguenos</span><br>en nuestras redes<br>para más novedades!</h2>
-            </div>
-            <div>
+            <div class="redes-sociales">
                 <a href="https://www.instagram.com/" target="_blank">
                     <svg width="60" height="65" viewBox="0 0 60 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_18_287)">

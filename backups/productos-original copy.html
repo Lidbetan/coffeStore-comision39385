@@ -5,117 +5,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locos por el Café index</title>
-    <link href="./css/styles.css" rel="stylesheet">
+    <title>Locos por el Café productos</title>
+    <link href="../css/styles.css" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <div>
-            <div>
-                <a href="./index.html">
-                    <img src="./assets/img/locos-x-el-cafe-logo.png" alt="logo-locos-x-el-cafe">
+        <div class="contenedor-logo-nav">
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img class="header-logo" src="../assets/img/locos-x-el-cafe-logo.png" alt="logo-locos-x-el-cafe">
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a class="enlaces" href="./index.html">Inicio</a></li>
-                    <li><a class="enlaces" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="enlaces" href="./pages/productos.html">Productos</a></li>
-                    <li><a class="enlaces" href="./pages/contacto.html">Contacto</a></li>
-                    <li><a class="enlaces" href="./pages/recetas.html">Recetas</a></li>
-                </ul>
+            <ul class="navbar">
+                <li><a class="nav-enlace nav-enlace-activo" href="../index.html">Inicio</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="#">Productos</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="./contacto.html">Contacto</a></li>
+                <li><a class="nav-enlace nav-enlace-activo" href="./recetas.html">Recetas</a></li>
+            </ul>
             </nav>
         </div>
 
     </header>
-
-    <div class="contenedor-slogan" >
-        <h2>La vida sabe mejor con una<br>taza de café</h2>
-    </div>
-    
-    <div class="contenedor-blanco-negro">
-        <div class="negro" >
-            <h3 >La mejor calidad</h3>
-        </div>
-        <div class="blanco">
-            <h3>El mejor precio</h3>
-        </div>
-    </div>
-
-    <!-- ^variedades-inicio -->
-
     <main>
-        <section>
-            <h1 ">Nuestras variedades</h1>
-            <div class="contenedor-variedades"> <!--^ variedades-inicio-->
-                    <div class="variedades">
-                        <a href="./pages/productos.html">
-                            <img src="./assets/img/cafe-italiano.jpg" alt="cafe-italiano">
-                        </a>
-                        <div>
-                            <p class="cafe-nombre">Italiano</p>
-                            <p class="cafe-info">Café tipo italiano, robusto
-                                intenso, 100% granos arábigos...</p>
-                            <p class="cafe-precio">$2400</p>
-                            <form action="" method="post">
-                                <input class="boton-agregar-carrito" type="submit" value="Agregar al carrito">
-                            </form>
-                        </div>
+        <section class="productos">
+            <h1 class="nuestros-productos">Nuestros productos</h1>
+            <div class="contenedor-productos"> <!--^ variedades-inicio-->
+                <div class=" cafe cafe-italiano">
+                    <a href="./pages/productos.html">
+                        <img class="img-cafe" src="../assets/img/cafe-italiano.jpg" alt="cafe-italiano">
+                    </a>
+                    <div class="producto-informacion">
+                        <p class="nombre-producto">Italiano</p>
+                        <p class="descripcion-producto">Café tipo italiano, robusto
+                            intenso, 100% granos arábigos...</p>
+                        <p class="precio-producto">$2400</p>
+                        <form action="" method="post">
+                            <input class="boton-agregar-carrito" type="submit" value="agregar al carrito">
+                        </form>
                     </div>
-                    <div class="variedades">
-                        <a href="./pages/productos.html">
-                            <img src="./assets/img/cafe-brasil .jpg" alt="cafe-brasil">
-                        </a>
-                        <div>
-    
-                            <p class="cafe-nombre">Brasil</p>
-                            <p class="cafe-info">Café tipo italiano, robusto
-                                intenso, 100% granos arábigos...</p>
-                            <p class="cafe-precio">$2400</p>
-                            <form action="" method="post">
-                                <input class="boton-agregar-carrito" type="submit" value="Agregar al carrito">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="variedades">
-                        <a href="./pages/productos.html"> <!--^CORREGIR TAMAÑO IMAGEN-->
-                            <img src="./assets/img/cafe-colombia.png" alt="cafe-colombia">
-                        </a>
-                        <div>
-                            <p class="cafe-nombre">Colombia</p>
-                            <p class="cafe-info">Café tipo italiano, robusto
-                                intenso, 100% granos arábigos...</p>
-                            <p class="cafe-precio">$2400</p>
-                            <form action="" method="post">
-                                <input class="boton-agregar-carrito" type="submit" value="Agregar al carrito">
-                            </form>
-    
-                        </div>
-                    </div>
+                </div>
+                <div class="cafe cafe-brasil">
+                    <a href="./pages/productos.html">
+                        <img class="img-cafe" src="../assets/img/cafe-brasil .jpg" alt="cafe-brasil">
+                    </a>
+                    <div class="producto-informacion">
 
+                        <p class="nombre-producto">Brasil</p>
+                        <p class="descripcion-producto">Café tipo italiano, robusto
+                            intenso, 100% granos arábigos...</p>
+                        <p class="precio-producto">$2400</p>
+                        <form action="" method="post">
+                            <input class="boton-agregar-carrito" type="submit" value="agregar al carrito">
+                        </form>
+                    </div>
+                </div>
+                <div class="cafe cafe-colombia">
+                    <a href="./pages/productos.html">
+                        <img class="img-cafe colombia" src="../assets/img/cafe-colombia.png" alt="cafe-colombia">
+                    </a>
+                    <div class="producto-informacion">
+                        <p class="nombre-producto">Colombia</p>
+                        <p class="descripcion-producto">Café tipo italiano, robusto
+                            intenso, 100% granos arábigos...</p>
+                        <p class="precio-producto">$2400</p>
+                        <form action="" method="post">
+                            <input class="boton-agregar-carrito" type="submit" value="agregar al carrito">
+                        </form>
+
+                    </div>
+                </div>
+                <div class=" cafe cafe-italiano">
+                    <a href="./pages/productos.html">
+                        <img class="img-cafe" src="../assets/img/cafe-italiano.jpg" alt="cafe-italiano">
+                    </a>
+                    <div class="producto-informacion">
+                        <p class="nombre-producto">Italiano</p>
+                        <p class="descripcion-producto">Café tipo italiano, robusto
+                            intenso, 100% granos arábigos...</p>
+                        <p class="precio-producto">$2400</p>
+                        <form action="" method="post">
+                            <input class="boton-agregar-carrito" type="submit" value="agregar al carrito">
+                        </form>
+                    </div>
+                </div>
+                <div class="cafe cafe-brasil">
+                    <a href="./pages/productos.html">
+                        <img class="img-cafe" src="../assets/img/cafe-brasil .jpg" alt="cafe-brasil">
+                    </a>
+                    <div class="producto-informacion">
+
+                        <p class="nombre-producto">Brasil</p>
+                        <p class="descripcion-producto">Café tipo italiano, robusto
+                            intenso, 100% granos arábigos...</p>
+                        <p class="precio-producto">$2400</p>
+                        <form action="" method="post">
+                            <input class="boton-agregar-carrito" type="submit" value="agregar al carrito">
+                        </form>
+                    </div>
+                </div>
+                <div class="cafe cafe-colombia">
+                    <a href="./pages/productos.html">
+                        <img class="img-cafe" src="../assets/img/cafe-colombia.png" alt="cafe-colombia">
+                    </a>
+                    <div class="producto-informacion">
+                        <p class="nombre-producto">Colombia</p>
+                        <p class="descripcion-producto">Café tipo italiano, robusto
+                            intenso, 100% granos arábigos...</p>
+                        <p class="precio-producto">$2400</p>
+                        <form action="" method="post">
+                            <input class="boton-agregar-carrito" type="submit" value="agregar al carrito">
+                        </form>
+
+                    </div>
+                </div>
             </div>
 
-            <div class="contenedor-ver-productos">
-                <a class="boton-ver-productos" href="pages/productos.html">Ver todos los productos</a>
-            </div> <!--^variedades-fin-->
         </section>
     </main>
-    <!-- ^productos-fin -->
 
     <footer>
-        <section >
-            <div>
+        <section class="contactos-y-redes">
+            <div class="contacto">
                 <h2>Contacto</h2>
-                <p >Corrientes 1367 - Rosario, Santa Fé</p>
-                <p>+54 341 423432</p>
-                <p> locosxelcafe@cafe.com</p>
+                <p class="direccion">Corrientes 1367 - Rosario, Santa Fé</p>
+                <p class="telefono">+54 341 423432</p>
+                <p class="e-mail"> locosxelcafe@cafe.com</p>
             </div>
-            <div>
-                <h2><span>Síguenos</span><br>en nuestras redes<br>para más novedades!</h2>
-            </div>
-            <div>
+            <div class="redes-sociales">
                 <a href="https://www.instagram.com/" target="_blank">
                     <svg width="60" height="65" viewBox="0 0 60 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_18_287)">

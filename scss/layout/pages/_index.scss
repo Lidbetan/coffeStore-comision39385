@@ -1,0 +1,134 @@
+/**^MAIN-INDEX**/
+main {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: $fuente-secundaria;
+            text-shadow: 0px 1px, 1px 0px, 1px 1px;
+            letter-spacing: 2px;
+            width: 80%;
+            margin: 2rem 0;
+        }
+    }
+}
+
+/**^CONTENEDORES-VARIEDADES**/
+main {
+    section {
+        div.contenedor-variedades {
+            @include flex(column, nowrap, center, center);
+            gap: 4rem;
+
+            div.variedades {
+                @include flex(column, nowrap, center, center);
+                width: 95%;
+                gap: 2rem;
+
+                div {
+                    @include flex(column, nowrap, center, center);
+                    gap: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+main {
+    section {
+        div {
+            a {
+                @include flex(column, nowrap, center, center);
+
+                img {
+                    border-radius: 10%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+main {
+    section {
+        div {
+            div.variedades {
+                div {
+                    p.cafe-nombre {
+                        text-align: center;
+                        font-family: $fuente-secundaria;
+                        font-size: 1.8rem;
+                        color: $marron;
+                        text-transform: uppercase;
+                        font-weight: bolder;
+                        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+                    }
+                    p.cafe-info {
+                        text-align: center;
+                        font-family: $fuente-secundaria;
+                        font-size: 1.6rem;
+                        color: $marron;
+                        line-height: 2rem;
+                    }
+                    p.cafe-precio {
+                        text-align: center;
+                        font-weight: bolder;
+                        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+                        font-family: $fuente-secundaria;
+                        font-size: 1.6rem;
+                        color: $marron;
+                }
+            }
+        }
+
+    }
+    }
+}
+
+/**^BOTON-CARRITO**/
+main {
+    section {
+        div {
+            div.variedades {
+                div {
+                    form {
+                        input {
+                            border: 1px solid #886138;
+                            font-family: $fuente-secundaria;
+                            font-weight: bold;
+                            padding: 1rem;
+                            background-color: #886138;
+                            color: $base;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/**^BOTON-VER-PRODUCTOS**/
+main {
+    section {
+        div.contenedor-ver-productos {
+            a.boton-ver-productos {
+                border: 1px solid #886138;
+                font-family: $fuente-secundaria;
+                font-weight: bold;
+                padding: 1rem;
+                background-color: #886138;
+                color: $base;
+                border-radius: 5px;
+                margin:5rem 0;
+            }
+        }
+    }
+}

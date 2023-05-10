@@ -1,575 +1,237 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 * {
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
-:root {
-
-    --base:#FFF2CC;
-    --gris-marron:#8D7B68;
-    --marron: #886138;
-    --beige:#C8B6A6;
-    --granate:#6F1717;
-    --gris:#D9D9D9;
-    --negro:#000000;
-    --blanco:#ffffff;
-    --fuente-principal:'Playfair Display', serif;
-    --fuente-secundaria:'Poppins', sans-serif;
-    --fuente-terciaria: 'Lilita One', cursive;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**Variables**/ /**Globales**/
 html {
-    font-size: 62.5%; /*^Esto es para que 1rem = a 10px*/
+  font-size: 62.5%;
+}
+html body {
+  background-color: #C8B6A6;
+  font-size: 1.6rem;
+  font-family: "Playfair Display", serif;
 }
 
-
-
-/*^GLOBALES*/
-body {
-    background-color: var(--beige);
-    font-size: 1.6rem;
-    font-family: var(--fuente-principal);
-}
-
-header {
-    background-color: var(--base);
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
 h1 {
-    font-size: 4.6rem;
+  font-size: 3rem;
 }
+
 h2 {
-    font-size: 3.8rem;
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2.2rem;
 }
 
 img {
-    width:100%
+  width: 100%;
 }
 
-/*&PAGE-INDEX-INICIO*/
-
-/*^NAVEGACION*/
-.contenedor-logo-nav {
-    display:flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding:0 2rem;
-    width:75%;
-    margin:auto;
-    overflow: hidden; /*^Con esta propiedad la nav bar no rompe el código, luego la reemplazo con el menú hamburgesa*/
+li {
+  list-style: none;
 }
 
-.navbar {
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    justify-content: flex-end;
-    align-items: flex-end;
+a {
+  text-decoration: none;
 }
-.header-logo {
-    border-radius: 50%;
-    padding: 0.5rem 0.5rem;
 
-}
 ul {
-    gap:4rem;
-    margin:0 2rem 0 0;
-    padding:0;
-    font-family: var(--fuente-principal);
-    font-weight: bold;
-    font-size: 24px;
-    text-transform: uppercase;
-    color:var(--negro)
-}
-.nav-enlace {
-    color:var(--negro)
+  padding: 0;
 }
 
-.nav-enlace:hover {
-    color:var(--granate);
+/**^HEADER**/
+/**^NAVBAR**/
+header {
+  background-color: #FFF2CC;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 75%;
+  margin: auto;
+}
+header div div a img {
+  border-radius: 50%;
+}
+header div nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 75%;
+  margin: auto;
+}
+header div nav ul li a {
+  color: #886138;
 }
 
-/*^SLOGAN*/
-
-.contenedor-slogan {
-    background-image: url(../assets/img/granos-cafe-2.jpg);
-    width: 100%;
-    height: 50rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+/**^SLOGAN**/
+div.contenedor-slogan {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/img/granos-cafe-2.jpg);
+  width: 100%;
+  height: 40vh;
+}
+div.contenedor-slogan h2 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  width: 70%;
+  text-align: center;
 }
 
-.contenedor-slogan .slogan {
-    color:var(--blanco);
-    font-family: var(--fuente-principal);
-    font-size: 50px;
-    font-weight:900;
-    letter-spacing: 2px;
-    
+/**^SECCION BLANCA Y NEGRA**/
+div.contenedor-blanco-negro .negro {
+  background-color: #000000;
+  text-align: center;
 }
-.contenedor-blanco-negro {
-    background-color: var(--gris);
-    display: flex;
-    flex-direction: column;
+div.contenedor-blanco-negro .negro h3 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  padding: 3rem 0 3rem 0;
+}
 
+div.contenedor-blanco-negro .blanco {
+  background-color: #ffffff;
+  text-align: center;
 }
-.contenedor-blanco-negro .negro {
-    background-color:var(--negro);
-    color:var(--blanco);
-    font-family: var(--fuente-principal);
-    font-size:2.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    padding: 3rem 0 3rem 2rem;
-    
+div.contenedor-blanco-negro .blanco h3 {
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  padding: 3rem 0 3rem 0;
 }
-.contenedor-blanco-negro .blanco {
-    background-color:var(--blanco);
-    color:var(--negro);
-    font-family: var(--fuente-principal);
-    font-size:2.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    padding: 3rem 0 3rem 2rem;
+
+/**^MAIN-INDEX**/
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/*^MAIN*/
 main section h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: var(--fuente-secundaria);
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
-    letter-spacing: 2px;
-    margin:5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  letter-spacing: 2px;
+  width: 80%;
+  margin: 2rem 0;
 }
 
-.contenedor-variedades {
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+/**^CONTENEDORES-VARIEDADES**/
+main section div.contenedor-variedades {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
-.contenedor-productos {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:3rem;
-    margin-top: 3rem;
-
+main section div.contenedor-variedades div.variedades {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  gap: 2rem;
 }
-.img-cafe {
-    border-radius: 10%;
-    width:50%;
-}
-
-.cafe {
-    text-align: center;
-    font-family: var(--fuente-secundaria);
-    padding: 15rem 0;
-    color:var(--marron);
-}
-.producto-informacion .nombre-producto {
-    font-weight: bolder ;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
-    letter-spacing: 2px;
-    color:var(--marron);
-
-}
-.cafe .precio-producto {
-    font-weight: bolder ;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
-    letter-spacing: 2px;
-    color:var(--marron);
-}
-.boton-agregar-carrito{
-    border: 1px solid #886138;
-    font-family: var(--fuente-secundaria);
-    font-weight: bold;
-    padding:1rem;
-    background-color:#886138;
-    color: var(--base);
-    border-radius: 5px;
-}
-.contenedor-ver-productos {
-    display:flex;
-    justify-content: center;
-}
-.boton-ver-productos {
-    border: 1px solid #886138;
-    font-family: var(--fuente-secundaria);
-    font-weight: bold;
-    padding:1rem;
-    background-color:#886138;
-    color: var(--base);
-    border-radius: 5px;
-
+main section div.contenedor-variedades div.variedades div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
 }
 
-/*^FOOTER*/
-
-footer {
-    background-color: var(--gris);
-    width:100%;
+main section div a {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.contactos-y-redes {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--gris);
-}
-.contacto h2 {
-    font-family: var(--fuente-terciaria);
-    font-weight: bold;
-    color:var(--granate);
-    font-size: 3.2rem;
-}
-.contacto p {
-    font-family: var(--fuente-principal);
-    font-weight:700
-}
-.redes-sociales {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
-}
-.siguenos-redes span {
-    color:var(--granate);
-}
-.siguenos-redes {
-    font-family: var(--fuente-terciaria);
-    font-weight: bold;
-    font-size: 3.2rem;
-   /*text-align:right;*/
-    width:auto;
-    
-
+main section div a img {
+  border-radius: 10%;
+  width: 100%;
 }
 
-/*&PAGE-INDEX-FIN*/
-
-/*&PAGE-NOSOTROS-INICIO*/
-.nosotros {
-    width:75%;
-    margin:auto;
+main section div div.variedades div p.cafe-nombre {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: #886138;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
-.nuestros-origenes {
-    margin-top: 5rem;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    grid-template-rows: 1fr 1;
-    grid-template-areas: "img1 h2a"
-                         "img1 pa";
+main section div div.variedades div p.cafe-info {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #886138;
+  line-height: 2rem;
 }
-.nosotros-img1 {
-    width:100%;
-    height:100%;
-    overflow: hidden;
-    object-fit: contain;
-    grid-area:img1
-}
-.nosotros-p-o {
-    text-align: justify;
-    grid-area: pa;
+main section div div.variedades div p.cafe-precio {
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #886138;
 }
 
-.nuestra-filosofia {
-    margin:5rem 0;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    grid-template-rows: 1fr 1;
-    grid-template-areas: "h2b img2 "
-                         "pb img2";
-}
-.nosotros-img2 {
-    width:100%;
-    height:100%;
-    overflow: hidden;
-    object-fit: contain;
-    grid-area:img2
-}
-.nosotros-p-o {
-    text-align: justify;
-    grid-area: pb;
-}
-.contactos-y-redes {
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color: var(--gris);
-}
-.siguenos-redes-nosotros {
-    font-family: var(--fuente-terciaria);
-    font-weight: bold;
-    font-size: 3.2rem;
-    text-align:right;
-    width:auto;
-    margin-right:-30rem;
-    
-}
-.siguenos-redes-nosotros span {
-    color:var(--granate);
+/**^BOTON-CARRITO**/
+main section div div.variedades div form input {
+  border: 1px solid #886138;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #886138;
+  color: #FFF2CC;
+  border-radius: 5px;
 }
 
-
-/*&PAGE-NOSOTROS-FIN*/
-
-/*&PAGE-PRODUCTOS-INICIO*/
-.nuestros-productos {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: var(--fuente-secundaria);
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
-    letter-spacing: 2px;
-    margin-bottom:-5rem;
-}
-.productos .contenedor-variedades {
-    display:flex;
-    flex-wrap:wrap;
-    margin:auto;
-    width:75%
-}
-/*&PAGE-PRODUCTOS-FIN*/
-
-/*&PAGE-CONTACTO-INICIO*/
-.contactanos {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: var(--fuente-secundaria);
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
-    letter-spacing: 2px;
-    margin: 5rem;
-}
-.contenedor-info-ubicacion {
-    display:flex;
-    width:70%;
-    gap:2rem;
-    margin:auto;
-    justify-content: space-evenly;
-    padding:5rem 0;
-
-}
-.info {
-    font-family: var(--fuente-principal);
-    font-weight: 600;
-    line-height: 3rem ;
-}
-.info p {
-    padding-bottom: 2rem;
-}
-.info span {
-    color:var(--granate);
-    
-}
-/*&PAGE-CONTACTO-FIN*/
-
-/*&PAGE-RECETAS-INICIO*/
-.recetas {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: var(--fuente-secundaria);
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
-    letter-spacing: 2px;
-    padding: 5rem 0;
+/**^BOTON-VER-PRODUCTOS**/
+main section div.contenedor-ver-productos a.boton-ver-productos {
+  border: 1px solid #886138;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #886138;
+  color: #FFF2CC;
+  border-radius: 5px;
+  margin: 5rem 0;
 }
 
-.receta-flat-white {
-    display:flex;
-    width:75%;
-    margin:auto;
-    gap:3rem;
-    padding: 7rem 0;
-}
-/*&PAGE-RECETAS-FIN*/
-
-/*!MediaQueries*/
-/**MQ-NOSOTROS*/
-@media (max-width: 320px) {
-    .h2-origenes {
-        text-align: center;
-    }
-}
-@media (max-width: 375px) {
-    .contenedor-logo-nav {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar {
-        display:flex;
-        flex-direction: column;
-        width:100%;
-        justify-content: space-evenly;
-        align-items: center;
-        margin:0;
-    }
-    .nosotros {
-        width:90%;
-        margin:auto;
-    }
-    .nuestros-origenes {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:4rem 0 0 0;
-    }
-    .nuestra-filosofia {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:7rem 0;
-    }
-    .nosotros-p {
-        line-height: 2.5rem;
-    }
-    .contactos-y-redes {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        gap:1rem;
-    }
-    .contacto {
-        text-align: center;
-    }
-    .siguenos-redes-nosotros {
-        text-align: center;
-        margin:auto;
-    }
-}
-@media (max-width: 425px) {
-    .contenedor-logo-nav {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar {
-        display:flex;
-        flex-direction: column;
-        width:100%;
-        justify-content: space-evenly;
-        align-items: center;
-        margin:0;
-    }
-    .nosotros {
-        width:90%;
-        margin:auto;
-    }
-    .nuestros-origenes {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:4rem 0 0 0;
-    }
-    .nuestra-filosofia {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:7rem 0;
-    }
-    .nosotros-p {
-        line-height: 2.5rem;
-    }
-    .contactos-y-redes {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        gap:1rem;
-    }
-    .contacto {
-        text-align: center;
-    }
-    .siguenos-redes-nosotros {
-        text-align: center;
-        margin:auto;
-    }
-}
-@media (max-width: 768px) {
-    .contenedor-logo-nav {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar {
-        display:flex;
-        flex-direction: column;
-        width:100%;
-        justify-content: space-evenly;
-        align-items: center;
-        margin:0;
-    }
-    .nosotros {
-        width:95%;
-        margin:auto;
-    }
-    .nuestros-origenes {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:4rem 0 0 0;
-    }
-    .nuestra-filosofia {
-        display:flex;
-        flex-direction: column;
-        gap:2rem;
-        align-items:center;
-        padding:7rem 0;
-    }
-    .contactos-y-redes {
-        display:flex;
-        justify-content: space-evenly;
-    }
-    .siguenos-redes-nosotros {
-        margin:auto;
-    }
-}
-@media (max-width: 1024px) {
-    .siguenos-redes-nosotros {
-        margin:auto;
-    }
-
-    .contenedor-logo-nav {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-}
-
-
-/**MQ-INDEX*/
-
-@media (max-width: 375px) {
-    .contenedor-slogan .slogan {
-        font-size: 4rem;
-    }
-    main section h1 {
-        font-size: 4rem;
-    }
-
-}
+/*# sourceMappingURL=styles.css.map */
