@@ -70,7 +70,8 @@ header div {
 header div div a img {
   border-radius: 50%;
 }
-header div nav ul {
+
+div nav ul {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -79,10 +80,12 @@ header div nav ul {
   gap: 1rem;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   width: 75%;
   margin: auto;
+  font-size: 2rem;
 }
-header div nav ul li a {
+div nav ul li a {
   color: #886138;
 }
 
@@ -107,26 +110,64 @@ div.contenedor-slogan h2 {
 }
 
 /**^SECCION BLANCA Y NEGRA**/
-div.contenedor-blanco-negro .negro {
+div.contenedor-blanco-negro {
+  width: 100%;
+  gap: 0;
+}
+div.contenedor-blanco-negro div.negro {
   background-color: #000000;
   text-align: center;
+  margin: 0;
+  width: 100%;
 }
-div.contenedor-blanco-negro .negro h3 {
+div.contenedor-blanco-negro div.negro h3 {
   color: #ffffff;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   padding: 3rem 0 3rem 0;
 }
-
-div.contenedor-blanco-negro .blanco {
+div.contenedor-blanco-negro div.blanco {
   background-color: #ffffff;
   text-align: center;
+  margin: 0;
+  width: 100%;
 }
-div.contenedor-blanco-negro .blanco h3 {
+div.contenedor-blanco-negro div.blanco h3 {
   color: #000000;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   padding: 3rem 0 3rem 0;
+}
+
+/**^FOOTER**/
+footer {
+  background-color: #D9D9D9;
+  width: 100%;
+}
+footer section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+footer section div h2 {
+  font-family: "Lilita One", cursive;
+  font-weight: bold;
+  color: #6F1717;
+  text-align: center;
+}
+footer section div p {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2.5rem;
+}
+footer section div.span h2 {
+  color: #000000;
+}
+footer section div.span h2 span {
+  color: #6F1717;
 }
 
 /**^MAIN-INDEX**/
@@ -146,7 +187,7 @@ main section h1 {
   margin: 2rem 0;
 }
 
-/**^CONTENEDORES-VARIEDADES**/
+/**^contenedores-variedades**/
 main section div.contenedor-variedades {
   display: flex;
   flex-direction: column;
@@ -211,7 +252,7 @@ main section div div.variedades div p.cafe-precio {
   color: #886138;
 }
 
-/**^BOTON-CARRITO**/
+/**^boton-carrito**/
 main section div div.variedades div form input {
   border: 1px solid #886138;
   font-family: "Poppins", sans-serif;
@@ -222,7 +263,7 @@ main section div div.variedades div form input {
   border-radius: 5px;
 }
 
-/**^BOTON-VER-PRODUCTOS**/
+/**^boton-ver-productos**/
 main section div.contenedor-ver-productos a.boton-ver-productos {
   border: 1px solid #886138;
   font-family: "Poppins", sans-serif;
@@ -232,6 +273,57 @@ main section div.contenedor-ver-productos a.boton-ver-productos {
   color: #FFF2CC;
   border-radius: 5px;
   margin: 5rem 0;
+}
+
+/**^MAIN-NOSOTROS**/
+main.nosotros section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 3rem 0;
+}
+main.nosotros section div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+main.nosotros section div h2 {
+  text-transform: uppercase;
+  margin: 3rem 0;
+  font-family: "Poppins", sans-serif;
+}
+main.nosotros section div div p {
+  text-align: justify;
+  margin: 2rem 0;
+  line-height: 3rem;
+}
+
+/**^MAIN-PRODUCTOS**/ /**^MAINCONTACTO**/
+main.contacto section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+main.contacto section div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  gap: 2rem;
+}
+main.contacto section div div.iframe iframe {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

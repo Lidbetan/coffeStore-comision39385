@@ -1,0 +1,18 @@
+/**^MAINCONTACTO**/
+main.contacto{
+    section{
+        @include flex(column,nowrap,center,center);
+        margin:4rem 0;
+        div {
+            @include flex(column,nowrap,center,center);
+            width:95%;
+            gap:2rem;
+            div.iframe{
+                iframe{
+                    width:100%;
+                }
+            }
+        }
+
+    }
+}

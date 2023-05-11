@@ -1,0 +1,31 @@
+/**^FOOTER**/
+footer {
+    background-color: $gris;
+    width: 100%;
+
+    section {
+        @include flex(column,nowrap,center,center);
+        div {
+            h2 {
+                font-family: $fuente-terciaria;
+                font-weight: bold;
+                color: $granate;
+                text-align: center;
+            }
+            p{
+                font-family: $fuente-principal;
+                font-weight: 700;
+                text-align: center;
+                line-height: 2.5rem;
+            }
+        }
+        div.span {
+            h2 {
+                color:$negro;
+                span{
+                    color:$granate;
+                }
+            }
+        }
+    }
+}

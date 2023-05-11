@@ -19,25 +19,29 @@ header {
             }
         }
 
-        nav {
-            ul {
-                @include flex(column, nowrap, center, center);
-                gap: 1rem;
-                text-align: center;
-                text-decoration: none;
-                width: 75%;
-                margin: auto;
+    }
+}
 
-                li {
-                    a {
-                        color: $marron;
-                    }
+div {
+    nav {
+        ul {
+            @include flex(column, nowrap, center, center);
+            gap: 1rem;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 75%;
+            margin: auto;
+            font-size: 2rem;
+
+            li {
+                a {
+                    color: $marron;
                 }
             }
         }
     }
 }
-
 
 /**^SLOGAN**/
 div.contenedor-slogan {
@@ -57,26 +61,33 @@ div.contenedor-slogan {
 }
 
 /**^SECCION BLANCA Y NEGRA**/
-div.contenedor-blanco-negro .negro {
-    background-color: $negro;
-    text-align: center;
+div.contenedor-blanco-negro {
+    width: 100%;
+    gap:0;
+    div.negro {
+        background-color: $negro;
+        text-align: center;
+        margin: 0;
+        width: 100%;
 
-    h3 {
-        color: $blanco;
-        font-family: $fuente-principal;
-        text-transform: uppercase;
-        padding: 3rem 0 3rem 0;
+        h3 {
+            color: $blanco;
+            font-family: $fuente-principal;
+            text-transform: uppercase;
+            padding: 3rem 0 3rem 0;
+        }
     }
-}
+    div.blanco {
+        background-color: $blanco;
+        text-align: center;
+        margin: 0;
+        width: 100%;
 
-div.contenedor-blanco-negro .blanco {
-    background-color: $blanco;
-    text-align: center;
-
-    h3 {
-        color: $negro;
-        font-family: $fuente-principal;
-        text-transform: uppercase;
-        padding: 3rem 0 3rem 0;
+        h3 {
+            color: $negro;
+            font-family: $fuente-principal;
+            text-transform: uppercase;
+            padding: 3rem 0 3rem 0;
+        }
     }
 }
