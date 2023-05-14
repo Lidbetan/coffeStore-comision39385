@@ -2,15 +2,25 @@
 main.contacto{
     section{
         @include flex(column,nowrap,center,center);
-        margin:4rem 0;
+        margin-bottom:4rem;
         div {
             @include flex(column,nowrap,center,center);
             width:95%;
             gap:2rem;
+            div{
+                text-align:center;
+                p{
+                    font-weight: bold;
+                    span{
+                        color:$granate;
+                    }
+                }
+            }
             div.iframe{
                 iframe{
                     width:100%;
                 }
+            
             }
         }
 

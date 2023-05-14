@@ -1,0 +1,19 @@
+main.recetas {
+    section {
+        @include flex(column, nowrap, center, center);
+        gap: 2rem;
+        margin-bottom: 2remgit;
+
+        div {
+            @include flex(column, nowrap, center, center);
+            gap: 2rem;
+            width: 95%;
+            p{
+                text-align: justify;
+                line-height: 3rem;
+            }
+
+
+        }
+    }
+}

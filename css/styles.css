@@ -81,6 +81,7 @@ div nav ul {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
   width: 75%;
   margin: auto;
   font-size: 2rem;
@@ -311,7 +312,7 @@ main.contacto section {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0;
+  margin-bottom: 4rem;
 }
 main.contacto section div {
   display: flex;
@@ -322,8 +323,40 @@ main.contacto section div {
   width: 95%;
   gap: 2rem;
 }
+main.contacto section div div {
+  text-align: center;
+}
+main.contacto section div div p {
+  font-weight: bold;
+}
+main.contacto section div div p span {
+  color: #6F1717;
+}
 main.contacto section div div.iframe iframe {
   width: 100%;
+}
+
+main.recetas section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2remgit;
+}
+main.recetas section div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 95%;
+}
+main.recetas section div p {
+  text-align: justify;
+  line-height: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
