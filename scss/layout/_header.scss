@@ -3,13 +3,14 @@
 header {
     background-color: $base;
 
-    div {
+    div.logo-nav {
         @include flex(column, nowrap, center, center);
         gap: 1rem;
         text-align: center;
         text-decoration: none;
         width: 75%;
         margin: auto;
+        padding: 2rem 0;
 
         div {
             a {
@@ -18,31 +19,29 @@ header {
                 }
             }
         }
-
-    }
-}
-
-div {
-    nav {
-        ul {
-            @include flex(column, nowrap, center, center);
-            gap: 1rem;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            width: 75%;
-            margin: auto;
-            font-size: 2rem;
-
-            li {
-                a {
-                    color: $marron;
+        nav {
+            ul {
+                @include flex(column, nowrap, center, center);
+                gap: 1rem;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                width: 75%;
+                margin: auto;
+                font-size: 2rem;
+    
+                li {
+                    a {
+                        color: $marron;
+                    }
                 }
             }
         }
+
     }
 }
+
 
 /**^SLOGAN**/
 div.contenedor-slogan {
@@ -50,15 +49,18 @@ div.contenedor-slogan {
     background-image: url(../assets/img/granos-cafe-2.jpg);
     width: 100%;
     height: 40vh;
-
-    h2 {
-        color: $blanco;
-        font-family: $fuente-principal;
-        font-weight: 900;
-        letter-spacing: 2px;
-        width: 70%;
-        text-align: center;
+    div{
+        @include flex(column,nowrap,center,center);
+        h2 {
+            color: $blanco;
+            font-family: $fuente-principal;
+            font-weight: 900;
+            letter-spacing: 2px;
+            width: 70%;
+            text-align: center;
+        }
     }
+    
 }
 
 /**^SECCION BLANCA Y NEGRA**/
