@@ -1,9 +1,11 @@
 /**^FOOTER**/
 footer {
-    background-color: $gris;
     width: 100%;
 
     section {
+        background-color: $gris;
+        width:75%;
+        margin:auto;
         @include flex(column,nowrap,center,center);
         div {
             h2 {

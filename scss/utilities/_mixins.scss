@@ -6,11 +6,12 @@
     align-items: $align;
 }
 
-@mixin grid ($col, $row, $justify, $align, $area){
+@mixin grid ($col, $row, $justify, $justifyi, $align, $area){
     display: grid;
     grid-template-columns: $col;
     grid-template-rows: $row;
     justify-content: $justify;
+    justify-items: $justifyi;
     align-items: $align;
     grid-template-areas: $area;
 }
