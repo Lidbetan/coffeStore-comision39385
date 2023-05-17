@@ -18,6 +18,29 @@ header {
     }
 }
 
+main {
+    @media (min-width:1024px) {
+        section {
+            div.contenedor-variedades {
+                @include flex(row, nowrap, center, center);
+                gap: 2rem;
+
+                div.variedades {
+                    @include flex(column, nowrap, center, center);
+                    width: 95%;
+                    gap: 2rem;
+
+                    div {
+                        @include flex(column, nowrap, center, center);
+                        gap: 1rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 footer {
     background-color: $gris;
     width: 100%;

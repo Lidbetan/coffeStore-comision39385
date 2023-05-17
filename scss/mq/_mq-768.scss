@@ -1,4 +1,5 @@
 /**^MEDIA-QUERIE-768**/
+
 header {
     div.logo-nav {
         @media(min-width:768px) {
@@ -16,6 +17,34 @@ header {
 
         }
     }
+}
+
+main {
+    @media (min-width:768px) {
+        section {
+            div.contenedor-variedades {
+                @include grid(repeat(2, 1fr), repeat(2, 1fr), center, center, center, none);
+
+                div.variedades {
+                    @include flex(column, nowrap, center, center);
+                    width: 95%;
+                    gap: 2rem;
+
+                    div {
+                        @include flex(column, nowrap, center, center);
+                        gap: 1rem;
+                        width: 100%;
+                    }
+
+                    
+                }
+                div.variedades.colombia {
+                    grid-column: 1 / 3;
+                }
+            }
+        }
+    }
+
 }
 
 footer {
@@ -43,7 +72,6 @@ footer {
             }
 
             div.span {
-                margin: auto;
 
                 h2 {
                     text-align: right;
