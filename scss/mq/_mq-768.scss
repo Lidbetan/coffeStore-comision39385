@@ -22,6 +22,7 @@ header {
 main {
     @media (min-width:768px) {
         section {
+            margin:5rem 0;
             div.contenedor-variedades {
                 @include grid(repeat(2, 1fr), repeat(2, 1fr), center, center, center, none);
 

@@ -10,11 +10,12 @@ header {
                 ul {
                     @include flex(row, nowrap, space-evenly, center);
                     margin: 0;
+                    gap:1.5rem;
                 }
 
             }
 
-        }
+        } 
     }
 }
 
@@ -48,7 +49,7 @@ main.nosotros {
         section {
             
             div.origenes {
-                @include grid(repeat(2, 1fr), (1fr, 1), center, center, center, none);
+                @include grid(repeat(2, 1fr), (2, 1fr), center, center, center, none);
                 gap:2rem;
                 h2{
                     grid-column: 2 / 3;
@@ -64,7 +65,7 @@ main.nosotros {
                 }
             }
             div.filosofia {
-                @include grid(repeat(2, 1fr), (1fr, 1), center, center, center, none);
+                @include grid(repeat(2, 1fr), (2, 1fr), center, center, center, none);
                 gap:2rem;
                 h2{
                     grid-column: 1 / 2;
@@ -77,6 +78,30 @@ main.nosotros {
                 div.filosofia-p{
                     grid-column: 1 / 2;
                     grid-row: 2 / 3;
+                }
+            }
+        }
+    }
+}
+/**#Productos**/
+main.productos {
+    @media (min-width:1024px) {
+        section {
+            margin: 5rem 0;
+            div.contenedor-variedades {
+                @include grid(repeat(3, 1fr), repeat(2, 1fr), center, center, center, none);
+                gap: 7rem;
+
+                div.variedades {
+                    @include flex(column, nowrap, center, center);
+                    width: 95%;
+                    gap: 2rem;
+
+                    div {
+                        @include flex(column, nowrap, center, center);
+                        gap: 1rem;
+                        width: 100%;
+                    }
                 }
             }
         }
