@@ -97,7 +97,7 @@ div.contenedor-slogan {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/img/granos-cafe-2.jpg);
+  background-image: url(../assets/img/granos-cafe-2.png);
   width: 100%;
   height: 40vh;
 }
@@ -519,6 +519,11 @@ footer {
     gap: 1.5rem;
   }
 }
+header div.contenedor-slogan div h2 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
 
 /**#Index**/
 @media (min-width: 1024px) {
@@ -666,6 +671,15 @@ footer {
   }
   footer section div.span h2 span {
     color: #6F1717;
+  }
+}
+
+/**^MEDIA-QUERIE-1440**/
+@media (min-width: 1441px) {
+  main section {
+    width: 75%;
+    margin: auto !important;
+    padding: 5rem 0;
   }
 }
 

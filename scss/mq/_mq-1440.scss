@@ -1,0 +1,11 @@
+/**^MEDIA-QUERIE-1440**/
+main{
+    @media (min-width:1441px){
+        section {
+            width:75%;
+            margin:auto!important;
+            padding: 5rem 0;
+        }
+    }
+    
+}

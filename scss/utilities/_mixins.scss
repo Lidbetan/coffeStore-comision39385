@@ -31,3 +31,19 @@
     font-weight: bolder;
     text-transform: uppercase;
 }
+
+@mixin font-h1-1024{
+    font-size:3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+@mixin font-h2-1024{
+    font-size:2.4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+@mixin font-h3-1024{
+    font-size:2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
