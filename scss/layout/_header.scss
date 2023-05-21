@@ -1,49 +1,6 @@
 /**^HEADER**/
-/**^NAVBAR**/
-header {
-    background-color: $base;
-
-    div.logo-nav {
-        @include flex(column, nowrap, center, center);
-        gap: 1rem;
-        text-align: center;
-        text-decoration: none;
-        width: 75%;
-        margin: auto;
-        padding: 2rem 0;
-
-        div {
-            a {
-                img {
-                    border-radius: 50%;
-                }
-            }
-        }
-        nav {
-            ul {
-                @include flex(column, nowrap, center, center);
-                gap: 1rem;
-                text-align: center;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-weight: bold;
-                width: 75%;
-                margin: auto;
-                font-size: 2rem;
-    
-                li {
-                    a {
-                        color: $marron;
-                    }
-                }
-            }
-        }
-
-    }
-}
-
-
-/**^SLOGAN**/
+/**Ver en boostrap.scss**/
+/**^Slogan**/
 div.contenedor-slogan {
     @include flex(column, nowrap, center, center);
     background-image: url(../assets/img/granos-cafe-2.png);
@@ -63,7 +20,7 @@ div.contenedor-slogan {
     
 }
 
-/**^SECCION BLANCA Y NEGRA**/
+/**^Sección blanca y negra**/
 div.contenedor-blanco-negro {
     width: 100%;
     gap:0;

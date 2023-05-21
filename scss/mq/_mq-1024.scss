@@ -1,28 +1,40 @@
 /**^MEDIA-QUERIE-1024**/
 header {
-    @media(min-width:1024px) {
-        div.logo-nav {
-            @include flex(row, nowrap, space-between, flex-end);
+    @media (min-width:1024px) {
+        background-color: $base;
 
-            nav {
-                @include flex(row, nowrap, flex-end, center);
+        nav {
+            div{
+                a {
+                    img {
+                        border-radius: 50%;
+                    }
 
-                ul {
-                    @include flex(row, nowrap, space-evenly, center);
-                    margin: 0;
-                    gap: 1.5rem;
+                    h1 {
+                        display: inline;
+                    }
                 }
 
+                div{
+                    ul{
+                        margin:0 !important;
+                        li {
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: bolder;
+                            color: $marron;
+                        }
+                    }
+                }
             }
-
         }
     }
+}
 
-    div.contenedor-slogan {
-        div {
-            h2 {
-                @include font-h2-1024
-            }
+div.contenedor-slogan {
+    div {
+        h2 {
+            @include font-h2-1024
         }
     }
 }
@@ -145,7 +157,7 @@ footer {
                     font-family: $fuente-principal;
                     font-weight: 700;
                     text-align: left;
-                    line-height: 2.5rem;
+                    line-height: 2rem;
                 }
             }
 
