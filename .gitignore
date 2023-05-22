@@ -1,5 +1,3 @@
-node_modules/
-package.json/
-package-lock.json/
+.vscode/
 backups/
-README.md/
+package.json/
