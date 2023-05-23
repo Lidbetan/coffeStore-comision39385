@@ -4,8 +4,16 @@ main{
         section {
             width:75%;
             margin:auto!important;
-            padding: 5rem 0;
+            margin-bottom:5rem;
         }
     }
     
 }
+/**#Footer**/
+footer {
+    section {
+        @media(min-width:1440px) {
+            width:75%;
+                    }
+                }
+            }

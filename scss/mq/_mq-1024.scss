@@ -115,7 +115,7 @@ main.nosotros {
 main.productos {
     @media (min-width:1024px) {
         section {
-            margin: 5rem 0;
+            margin-bottom:5rem;
 
             div.contenedor-variedades {
                 @include grid(repeat(3, 1fr), repeat(2, 1fr), center, center, center, none);
@@ -133,17 +133,44 @@ main.productos {
                     }
                 }
             }
+            h2 {
+                margin-bottom:5rem;
+            }
         }
     }
 }
+/**#Contacto**/
+main.contacto {
+    @media (min-width:1024px) {
+        section{
+            margin-bottom:5rem;
+            div{
+                @include flex(row, nowrap, space-evenly, center);
+                div.contacto-info{
+                    @include flex(column, nowrap, center, center);
+                    p{
 
+                    } 
+                }
+            }
+        }
+        h2{
+            text-align: center;
+            margin-top: 5rem;
+        }
+    }
+    
+}
+
+/**#Footer**/
 footer {
     background-color: $gris;
-    width: 100%;
 
     section {
         @media(min-width:1024px) {
             @include flex(row, nowrap, space-between, center);
+            width:95%;
+
 
             div {
                 h2 {

@@ -8,9 +8,7 @@ main.nosotros {
             @include flex(column,nowrap,center,center);
             width:95%;
             h2{
-                text-transform: uppercase;
                 margin:3rem 0;
-                font-family: $fuente-secundaria;
             }
             div{
                 p{
@@ -24,9 +22,7 @@ main.nosotros {
             @include flex(column,nowrap,center,center);
             width:95%;
             h2{
-                text-transform: uppercase;
                 margin:3rem 0;
-                font-family: $fuente-secundaria;
             }
             div{
                 p{
