@@ -37,6 +37,7 @@ h2 {
 
 h3 {
   font-size: 2.2rem;
+  font-weight: 600;
 }
 
 img {
@@ -347,7 +348,7 @@ main.recetas section {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 2remgit;
+  margin-bottom: 2rem;
 }
 main.recetas section div {
   display: flex;
@@ -358,9 +359,25 @@ main.recetas section div {
   gap: 2rem;
   width: 95%;
 }
+main.recetas section div div img {
+  width: 100%;
+  height: auto;
+  transform: scale(3.5);
+  margin-bottom: 5rem;
+}
 main.recetas section div p {
   text-align: justify;
   line-height: 3rem;
+}
+main.recetas section div ul {
+  text-align: justify;
+}
+main.recetas section div ul li {
+  list-style-type: disc;
+}
+main.recetas section div ul li span {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 /**^MEDIA-QUERIE-768**/

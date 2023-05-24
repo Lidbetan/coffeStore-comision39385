@@ -2,15 +2,33 @@ main.recetas {
     section {
         @include flex(column, nowrap, center, center);
         gap: 2rem;
-        margin-bottom: 2remgit;
+        margin-bottom: 2rem;
 
         div {
             @include flex(column, nowrap, center, center);
             gap: 2rem;
             width: 95%;
+            div{
+                img{
+                    width:100%;
+                    height:auto;
+                    transform: scale(3.5);
+                    margin-bottom: 5rem;
+                }
+            }
             p{
                 text-align: justify;
                 line-height: 3rem;
+            }
+            ul{
+                text-align: justify;
+                li{
+                    list-style-type: disc;
+                    span{
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                    }
+                }
             }
 
 
