@@ -13,7 +13,18 @@
   box-sizing: border-box;
 }
 
-/**Variables**/ /**Globales**/
+/**Variables**/ /**#botones**/
+.boton-agregar-carrito, main section div.contenedor-ver-productos a.boton-ver-productos, main section div div.variedades div form input.boton-agregar-carrito {
+  border: 1px solid #886138;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #886138;
+  color: #FFF2CC;
+  border-radius: 5px;
+}
+
+/**Globales**/
 html {
   font-size: 62.5%;
 }
@@ -174,6 +185,12 @@ footer section div.span h2 span {
   color: #6F1717;
 }
 
+/**^boton-carrito**/
+/**^boton-ver-productos**/
+main section div.contenedor-ver-productos a.boton-ver-productos {
+  margin: 3rem 0;
+}
+
 /**^MAIN-INDEX**/
 main section {
   display: flex;
@@ -244,29 +261,6 @@ main section div div.variedades div p.precio {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: #886138;
-}
-
-/**^boton-carrito**/
-main section div div.variedades div form input {
-  border: 1px solid #886138;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  padding: 1rem;
-  background-color: #886138;
-  color: #FFF2CC;
-  border-radius: 5px;
-}
-
-/**^boton-ver-productos**/
-main section div.contenedor-ver-productos a.boton-ver-productos {
-  border: 1px solid #886138;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  padding: 1rem;
-  background-color: #886138;
-  color: #FFF2CC;
-  border-radius: 5px;
-  margin: 5rem 0;
 }
 
 /**^MAIN-NOSOTROS**/
