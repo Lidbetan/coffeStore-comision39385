@@ -60,6 +60,20 @@ main {
     }
 
 }
+main.recetas{
+    @media (min-width:768px) {
+        section{
+            div{
+                div{
+                    img{
+                        width:55%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
 
 footer {
     background-color: $gris;

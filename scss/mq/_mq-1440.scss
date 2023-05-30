@@ -58,6 +58,20 @@ main.nosotros {
     }
 
 }
+main.recetas{
+    @media (min-width:1440px) {
+        section{
+            div{
+                div{
+                    img{
+                        width:60% !important;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /**#Footer**/
 footer {
