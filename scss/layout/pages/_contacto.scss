@@ -64,8 +64,7 @@ main.contacto{
                         div.input.submit{
                             text-align: center;
                             input{
-                                
-                                color:$marron;
+                                @extend.boton-agregar-carrito;
                             }
                         }
                         
