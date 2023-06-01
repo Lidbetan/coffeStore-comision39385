@@ -5,9 +5,10 @@ footer {
     section {
         background-color: $gris;
         width:75%;
-        margin:auto;
+        margin: auto;
         @include flex(column,nowrap,center,center);
         div {
+            
             h2 {
                 font-family: $fuente-terciaria;
                 font-weight: bold;
@@ -22,14 +23,21 @@ footer {
                 line-height: 2.5rem;
             }
         }
-        div.span {
+        div.siguenos {
             h2 {
-                color:$negro;
-                margin:0.5rem;
-                span{
-                    color:$granate;
-                }
+                font-family: $fuente-terciaria;
+                font-weight: bold;
+                color: $granate;
+                text-align: center;
+                margin: 0.5rem;
             }
+            p{
+                font-family: $fuente-secundaria !important;
+                font-weight: 700;
+                text-align: center;
+                line-height: 2.5rem;
+            }
+            
         }
     }
 }

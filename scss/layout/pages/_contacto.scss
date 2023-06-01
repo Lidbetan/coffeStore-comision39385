@@ -1,5 +1,10 @@
 /**^MAINCONTACTO**/
 main.contacto{
+    h2{
+        font-family: $fuente-terciaria;
+        color:$granate;
+        font-size: 3rem;
+    }
     section{
         @include flex(column,nowrap,center,center);
         margin-bottom:4rem;
@@ -40,6 +45,7 @@ main.contacto{
                         }
                         div.contenedor-inputs{
                             @include flex(column,nowrap,center,center);
+                            gap:2rem;
                             div.input{
                                 label{
                                     display: block;

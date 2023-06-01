@@ -3,7 +3,8 @@ header {
     background-color: $base;
 
     nav {
-        div {
+        div{
+            @include flex(row, nowrap, space-between, center !important);
             a {
                 img {
                     border-radius: 50%;

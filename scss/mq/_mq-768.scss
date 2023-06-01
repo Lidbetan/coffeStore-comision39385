@@ -98,20 +98,12 @@ footer {
                     line-height: 2rem;
                 }
             }
-
-            div.span {
-
-                h2 {
-                    text-align: right;
-                    color: $negro;
-
-                    span {
-                        color: $granate;
-                    }
-                }
-            }
+            div.siguenos {
+                margin-top:-2.5rem;
+             }
 
             div.iconos-redes {
+                margin:-2.5rem 0;
                 grid-column: 1 / 3;
                 grid-row: 2 / 3;
 

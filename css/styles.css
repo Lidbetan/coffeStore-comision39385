@@ -5,12 +5,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 /**Variables**/ /**#botones**/
@@ -35,11 +35,11 @@ html body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -70,6 +70,13 @@ ul {
 /**^BOOTSTRAP-NAVBAR**/
 header {
   background-color: #FFF2CC;
+}
+header nav div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center !important;
 }
 header nav div a img {
   border-radius: 50%;
@@ -128,7 +135,7 @@ div.contenedor-blanco-negro {
 div.contenedor-blanco-negro div.negro {
   background-color: #000000;
   text-align: center;
-  margin: 0;
+  margin-bottom: 0 !important;
   width: 100%;
 }
 div.contenedor-blanco-negro div.negro h3 {
@@ -136,11 +143,12 @@ div.contenedor-blanco-negro div.negro h3 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   padding: 3rem 0 3rem 0;
+  margin-bottom: 0 !important;
 }
 div.contenedor-blanco-negro div.blanco {
   background-color: #ffffff;
   text-align: center;
-  margin: 0;
+  margin-bottom: 0 !important;
   width: 100%;
 }
 div.contenedor-blanco-negro div.blanco h3 {
@@ -148,6 +156,7 @@ div.contenedor-blanco-negro div.blanco h3 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   padding: 3rem 0 3rem 0;
+  margin: 0 !important;
 }
 
 /**^FOOTER**/
@@ -177,12 +186,18 @@ footer section div p {
   text-align: center;
   line-height: 2.5rem;
 }
-footer section div.span h2 {
-  color: #000000;
+footer section div.siguenos h2 {
+  font-family: "Lilita One", cursive;
+  font-weight: bold;
+  color: #6F1717;
+  text-align: center;
   margin: 0.5rem;
 }
-footer section div.span h2 span {
-  color: #6F1717;
+footer section div.siguenos p {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 /**^boton-carrito**/
@@ -192,13 +207,19 @@ main section div.contenedor-ver-productos a.boton-ver-productos {
 }
 
 /**^MAIN-INDEX**/
+/**^contenedores-variedades**/
 main section {
   display: flex;
   flex-direction: column;
+  flex-wrap: center;
+  justify-content: center;
   align-items: center;
 }
-
-/**^contenedores-variedades**/
+main section h2 {
+  font-family: "Lilita One", cursive;
+  color: #6F1717;
+  font-size: 3rem;
+}
 main section div.contenedor-variedades {
   display: flex;
   flex-direction: column;
@@ -206,6 +227,7 @@ main section div.contenedor-variedades {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  width: 95%;
 }
 main section div.contenedor-variedades div.variedades {
   display: flex;
@@ -213,7 +235,7 @@ main section div.contenedor-variedades div.variedades {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 100%;
   gap: 2rem;
 }
 main section div.contenedor-variedades div.variedades div {
@@ -223,7 +245,7 @@ main section div.contenedor-variedades div.variedades div {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 100%;
+  width: 61%;
 }
 
 main section div a {
@@ -306,7 +328,16 @@ main.nosotros section div.filosofia div p {
   line-height: 3rem;
 }
 
-/**^MAIN-PRODUCTOS**/ /**^MAINCONTACTO**/
+/**^MAIN-PRODUCTOS**/
+main.productos {
+  margin-bottom: 3rem;
+}
+/**^MAINCONTACTO**/
+main.contacto h2 {
+  font-family: "Lilita One", cursive;
+  color: #6F1717;
+  font-size: 3rem;
+}
 main.contacto section {
   display: flex;
   flex-direction: column;
@@ -358,6 +389,7 @@ main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.c
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input label {
   display: block;
@@ -504,14 +536,11 @@ footer {
     text-align: left;
     line-height: 2rem;
   }
-  footer section div.span h2 {
-    text-align: right;
-    color: #000000;
-  }
-  footer section div.span h2 span {
-    color: #6F1717;
+  footer section div.siguenos {
+    margin-top: -2.5rem;
   }
   footer section div.iconos-redes {
+    margin: -2.5rem 0;
     grid-column: 1/3;
     grid-row: 2/3;
   }
@@ -681,9 +710,11 @@ div.contenedor-slogan div h2 {
   main.contacto section div.contacto-wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    width: 75%;
+    margin: auto;
   }
   main.contacto section div.contacto-wrapper div.contacto-info {
     display: flex;
@@ -692,9 +723,23 @@ div.contenedor-slogan div h2 {
     justify-content: center;
     align-items: center;
   }
-  main.contacto h2 {
+  main.contacto section div.contacto-wrapper div.contacto-form {
+    width: 100%;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form {
+    width: 100%;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input.mensaje {
+    width: 50%;
+    margin-bottom: 2rem;
     text-align: center;
-    margin-top: 5rem;
   }
 }
 
@@ -763,15 +808,11 @@ footer {
     text-align: left;
     line-height: 2rem;
   }
-  footer section div.span {
-    margin-left: 10rem;
+  footer section div.siguenos {
+    margin-top: -2.5rem;
   }
-  footer section div.span h2 {
-    text-align: right;
-    color: #000000;
-  }
-  footer section div.span h2 span {
-    color: #6F1717;
+  footer section div.iconos-redes {
+    margin-top: -2.5rem;
   }
 }
 
@@ -850,6 +891,40 @@ footer {
 @media (min-width: 1440px) {
   footer section {
     width: 75%;
+  }
+}
+
+/**^MEDIA-QUERIE-2560**/
+@media (min-width: 2560px) {
+  main.contacto section {
+    margin-bottom: 5rem;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form {
+    width: 100%;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form {
+    width: 100%;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: none;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input.nombre {
+    padding-left: 5rem;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input.celular {
+    padding-right: 5rem;
+  }
+  main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input.mensaje {
+    grid-column: 1/4;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 }
 

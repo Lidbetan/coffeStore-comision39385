@@ -27,7 +27,7 @@ div.contenedor-blanco-negro {
     div.negro {
         background-color: $negro;
         text-align: center;
-        margin: 0;
+        margin-bottom: 0 !important;
         width: 100%;
 
         h3 {
@@ -35,12 +35,13 @@ div.contenedor-blanco-negro {
             font-family: $fuente-principal;
             text-transform: uppercase;
             padding: 3rem 0 3rem 0;
+            margin-bottom: 0 !important;
         }
     }
     div.blanco {
         background-color: $blanco;
         text-align: center;
-        margin: 0;
+        margin-bottom: 0 !important;
         width: 100%;
 
         h3 {
@@ -48,6 +49,7 @@ div.contenedor-blanco-negro {
             font-family: $fuente-principal;
             text-transform: uppercase;
             padding: 3rem 0 3rem 0;
+            margin: 0 !important;
         }
     }
 }

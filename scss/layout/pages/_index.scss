@@ -1,29 +1,27 @@
 /**^MAIN-INDEX**/
-main {
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    }
-
-
 /**^contenedores-variedades**/
 main {
     section {
+        @include flex(column,center,center,center);
+        h2{
+            font-family: $fuente-terciaria;
+            color:$granate;
+            font-size: 3rem;
+        }
         div.contenedor-variedades {
             @include flex(column, nowrap, center, center);
             gap: 4rem;
+            width:95%;
 
             div.variedades {
                 @include flex(column, nowrap, center, center);
-                width: 95%;
+                width: 100%;
                 gap: 2rem;
 
                 div {
                     @include flex(column, nowrap, center, center);
                     gap: 1rem;
-                    width: 100%;
+                    width: 61%;
                 }
             }
         }
