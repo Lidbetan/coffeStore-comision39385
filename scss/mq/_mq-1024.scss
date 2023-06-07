@@ -183,6 +183,9 @@ main.contacto {
                                     width:50%;
                                     margin-bottom:2rem;
                                     text-align: center;
+                                    textarea{
+                                        width:100%;
+                                    }
 
                                 }
                             }
@@ -253,7 +256,7 @@ footer {
     section {
         @media(min-width:1024px) {
             @include flex(row, nowrap, space-between, center);
-            width: 95%;
+            width: 75%;
 
 
             div {
@@ -274,10 +277,12 @@ footer {
 
             div.siguenos {
                 margin-top: -2.5rem;
+                padding-right: 11rem;
             }
 
             div.iconos-redes {
                 margin-top: -2.5rem;
+                
             }
         }
     }

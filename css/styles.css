@@ -407,6 +407,7 @@ main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.c
 main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input.mensaje textarea {
   border: none;
   margin-top: -2rem;
+  padding: 0.8rem;
 }
 main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.input.submit {
   text-align: center;
@@ -538,6 +539,12 @@ footer {
   }
   footer section div.siguenos {
     margin-top: -2.5rem;
+  }
+  footer section div.siguenos h2 {
+    text-align: left;
+  }
+  footer section div.siguenos p {
+    text-align: left;
   }
   footer section div.iconos-redes {
     margin: -2.5rem 0;
@@ -741,6 +748,9 @@ div.contenedor-slogan div h2 {
     margin-bottom: 2rem;
     text-align: center;
   }
+  main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input.mensaje textarea {
+    width: 100%;
+  }
 }
 
 /**#Recetas**/
@@ -794,7 +804,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 75%;
   }
   footer section div h2 {
     font-family: "Lilita One", cursive;
@@ -810,6 +820,7 @@ footer {
   }
   footer section div.siguenos {
     margin-top: -2.5rem;
+    padding-right: 11rem;
   }
   footer section div.iconos-redes {
     margin-top: -2.5rem;
@@ -922,9 +933,20 @@ footer {
   }
   main.contacto section div.contacto-wrapper div.contacto-form form fieldset div.contenedor-inputs div.input.mensaje {
     grid-column: 1/4;
-    width: 100%;
+    width: 50%;
     margin-bottom: 2rem;
     text-align: center;
+  }
+}
+
+/**#Footer**/
+@media (min-width: 2560px) {
+  footer section div.siguenos {
+    padding-left: 11rem;
+    padding-right: 0;
+  }
+  footer section div.iconos-redes {
+    padding-right: 23rem;
   }
 }
 

@@ -24,7 +24,7 @@ main.contacto {
 
                                 div.input.mensaje {
                                     grid-column:1 / 4;
-                                    width: 100%;
+                                    width: 50%;
                                     margin-bottom: 2rem;
                                     text-align: center;
 
@@ -39,6 +39,23 @@ main.contacto {
             }
 
 
+        }
+    }
+}
+
+/**#Footer**/
+footer {
+    section {
+        @media(min-width:2560px) {
+                div.siguenos{
+                    padding-left:11rem;
+                    padding-right:0;
+                }
+                div.iconos-redes{
+                    padding-right:23rem;
+                
+                
+            }
         }
     }
 }
